@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func subSets() {
+func subsets() {
 	arr := []int{1, 2, 3}
 	ans := [][]int{}
 
