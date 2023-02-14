@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "05bd4e46-4cc7-4f9f-9243-3a3fc4a24205",
+		"name": "moguding",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://api.moguding.net:9000/session/user/v1/login",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Mobile/15E148 Safari/604.1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"phone\": \"18150620699\",\n    \"password\": \"Pw_981933\",\n    \"loginType\": \"ios\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.moguding.net:9000/session/user/v1/login",
+					"protocol": "https",
+					"host": [
+						"api",
+						"moguding",
+						"net"
+					],
+					"port": "9000",
+					"path": [
+						"session",
+						"user",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.moguding.net:9000/attendence/clock/v1/save",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJtb2d1ZGluZy11c2VyIiwic3ViIjoie1wibG9naW5UeXBlXCI6XCJpb3NcIixcInVzZXJJZFwiOjEwMjM3ODI5OX0iLCJhdWQiOiJtb2d1ZGluZyIsImV4cCI6MTkzNTg4MjA4MSwibmJmIjoxNjIwMjYxOTgxLCJpYXQiOjE2MjAyNjI4ODF9.Mt6hRjRs-g1yTWncAaII7SuRYPwtSmlAK2aq0rCiZ_-_IqcHjXB5puKBPESyLuZbaTObK6KhgqJjDVLp95a4vw",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Mobile/15E148 Safari/604.1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"country\": \"中国\",\n    \"address\": \"福建省 · 福州市 · 霖隆建材\",\n    \"province\": \"福建省\",\n    \"state\": \"NORMAL\",\n    \"city\": \"福州市\",\n    \"latitude\": \"26.081728\",\n    \"planId\": \"965c304f23968e4b17e337e21f8eacfe\",\n    \"description\": \"\",\n    \"type\": \"END\",\n    \"device\": \"ios\",\n    \"longitude\":\"119.572929\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.moguding.net:9000/attendence/clock/v1/save",
+					"protocol": "https",
+					"host": [
+						"api",
+						"moguding",
+						"net"
+					],
+					"port": "9000",
+					"path": [
+						"attendence",
+						"clock",
+						"v1",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.moguding.net:9000/practice/plan/v1/getPlanByStu",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJtb2d1ZGluZy11c2VyIiwic3ViIjoie1wibG9naW5UeXBlXCI6XCJpb3NcIixcInVzZXJJZFwiOjEwMjM3ODI5OX0iLCJhdWQiOiJtb2d1ZGluZyIsImV4cCI6MTkzMTI0NTczNSwibmJmIjoxNjE1NjI1NjM1LCJpYXQiOjE2MTU2MjY1MzV9.6sNjzBezQrbsBnSD0fTvt0JsPdvrzhUdtvbBplFTWxLxUnIISqjcCBvu_oA86VTx1U-aiomgDBGgIb5FNiw0lA",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Mobile/15E148 Safari/604.1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"paramsType\": \"student\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.moguding.net:9000/practice/plan/v1/getPlanByStu",
+					"protocol": "https",
+					"host": [
+						"api",
+						"moguding",
+						"net"
+					],
+					"port": "9000",
+					"path": [
+						"practice",
+						"plan",
+						"v1",
+						"getPlanByStu"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
